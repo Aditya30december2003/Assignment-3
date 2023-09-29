@@ -1,0 +1,65 @@
+/* Basic styles, customize as needed */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.search-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 200px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.results, .no-results {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.results h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results li {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.results button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.results button:hover {
+    background-color: #d32f2f;
+}
+
+.no-results p {
+    color: #666;
+}
