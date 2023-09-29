@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-if="list.found.length > 0">
+        <ul>
+            <li ng-repeat="item in list.found">
+                <b>{{ item.name }}</b>, {{ item.short_name }}, {{ item.description }}
+                <button ng-click="list.onRemove({ index: $index })">Don't want this one!</button>
+            </li>
+        </ul>
+    </div>
+    <div ng-if="list.found.length === 0">
+        <p>Nothing found</p>
+    </div>
+    
+</body>
+</html>
