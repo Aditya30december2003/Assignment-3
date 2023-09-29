@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NarrowItDownApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Narrow It Down For Me!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="founditems.directive.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="NarrowItDownController as ctrl">
+    <h1>Narrow It Down For Me!</h1>
+    <div>
+        <input type="text" ng-model="ctrl.searchTerm" placeholder="Search term">
+        <button ng-click="ctrl.narrowItDown()">Narrow It Down For Me!</button>
+    </div>
+    <div>
+        <found-items found="ctrl.found" on-remove="ctrl.removeItem(index)"></found-items>
+    </div>
+</body>
+</html>
